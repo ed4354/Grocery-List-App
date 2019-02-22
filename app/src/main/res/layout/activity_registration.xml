@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/ed_design"
+    android:background="@drawable/background_animation"
     tools:context=".RegistrationActivity">
 
     <ScrollView
@@ -25,37 +25,28 @@
                 android:textAppearance="?android:textAppearanceLarge"
                 android:gravity="center"/>
             <EditText
+                android:id="@+id/email_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:background="@drawable/ed_design"
                 android:hint="@string/email"
-                android:background="@drawable/ed_design"
-                android:padding="10dp"
                 android:inputType="textEmailAddress"
-                android:textColorHint="@android:color/white"
-                android:textColor="@android:color/white"
-                android:id="@+id/email_reg"/>
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
             <EditText
+                android:id="@+id/password_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:background="@drawable/ed_design"
                 android:hint="@string/password"
-                android:background="@drawable/ed_design"
-                android:padding="10dp"
                 android:inputType="textPassword"
-                android:textColorHint="@android:color/white"
-                android:textColor="@android:color/white"
-                android:id="@+id/password_reg"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="@string/registration"
-                android:background="@drawable/ed_design"
                 android:padding="10dp"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-                android:textColor="@android:color/white"
-                android:id="@+id/btn_reg"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,4 +59,15 @@
 
         </LinearLayout>
     </ScrollView>
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/registration"
+        android:background="@drawable/ed_design_two"
+        android:padding="10dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="@android:color/white"
+        android:translationY="160sp"
+        android:id="@+id/btn_reg"/>
 </LinearLayout>

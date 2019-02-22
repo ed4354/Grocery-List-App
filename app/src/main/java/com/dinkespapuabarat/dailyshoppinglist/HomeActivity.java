@@ -46,7 +46,6 @@ public class HomeActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.home_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Daily Shopping List");
-
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseUser mUser = mAuth.getCurrentUser();
